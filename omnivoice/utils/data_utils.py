@@ -30,9 +30,9 @@ def read_test_list(path):
     """Read a JSONL test list file.
 
     Each line should be a JSON object with fields:
-        id, text, ref_audio, ref_text, language_id, language_name, duration, speed
+        id, text, ref_audio, ref_text, language_id, language_name, duration, speed, instruct
 
-    language_id, language_name, duration, and speed are optional (default to None).
+    language_id, language_name, duration, speed, and instruct are optional (default to None).
 
     Returns a list of dicts.
     """
